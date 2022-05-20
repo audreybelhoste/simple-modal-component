@@ -54,10 +54,9 @@ const Modal = _ref => {
 };
 
 Modal.propTypes = {
-  children: _propTypes.default.string,
+  children: _propTypes.default.object,
   isOpened: _propTypes.default.bool,
-  onClose: _propTypes.default.func,
-  style: _propTypes.default.string
+  onClose: _propTypes.default.func
 };
 var _default = Modal;
 exports.default = _default;

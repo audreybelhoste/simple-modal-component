@@ -35,10 +35,9 @@ const Modal = ({ children, isOpened, onClose, style }) => {
 };
 
 Modal.propTypes = {
-	children: propTypes.string, 
+	children: propTypes.object, 
 	isOpened: propTypes.bool, 
 	onClose: propTypes.func,
-	style: propTypes.string,
 }
 
 export default Modal

@@ -26,3 +26,8 @@ export const Exemple = () => {
 	)
 }
 ```
+
+- isOpened : boolean | Contains the state (opened or closed) of the modale
+- onClose : function | Calls the function which closes the modale
+
+You can use CSS class `.modal-content` to customize style, for example : background-color, border, border-radius, max-width, padding. 
