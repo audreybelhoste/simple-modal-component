@@ -4,12 +4,13 @@ A simple & lightweight method of displaying modal windows.
 
 To install, you can use npm or yarn:
 
-$ npm install simple-modal-component
-$ yarn add simple-modal-component
+	$ npm install simple-modal-component
+	$ yarn add simple-modal-component
 
 ## Usage
 
-```import { useState } from "react";
+```jsx
+import { useState } from "react";
 import Modal from "@simple-modal-component-ab/Modal";
 
 export const Exemple = () => {
@@ -23,4 +24,5 @@ export const Exemple = () => {
 			<p>Your text here</p>
 		</Modal>
 	)
-}```
+}
+```
