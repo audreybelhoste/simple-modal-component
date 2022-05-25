@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import propTypes from 'prop-types';
 import './Modal.css';
 
-const Modal = ({ children, isOpened, onClose, style }) => {
+const Modal = ({ children, isOpened, onClose }) => {
 	useEffect(() => {
 		function handleEscapeKey(e) {
 			if (e.code === 'Escape') {
@@ -18,7 +18,7 @@ const Modal = ({ children, isOpened, onClose, style }) => {
 		<div className="modal" onClick={onClose}>
 			<div 
 				className="modal-content" 
-				style={style} onClick={e => {
+				onClick={e => {
 				e.stopPropagation();
 			}}>
 				<button className="modal-close" onClick={onClose}>
@@ -36,7 +36,6 @@ Modal.propTypes = {
 	children: propTypes.string.isRequired, 
 	isOpened: propTypes.bool.isRequired, 
 	onClose: propTypes.func.isRequired,
-	style: propTypes.string,
 }
 
 export default Modal
